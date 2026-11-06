@@ -1,0 +1,17 @@
+{
+  "name": "citas-hospital-hsj",
+  "version": "2.0.0",
+  "description": "Portal público de citas HSJ sobre Laravel 13, Blade, Tailwind CSS y Preline.",
+  "scripts": {
+    "build": "npm run build:css && npm run build:preline",
+    "build:css": "tailwindcss -i ./public/assets/css/tailwind-input.css -o ./public/assets/css/tailwind.css --minify",
+    "build:preline": "node ./tools/copy-preline.cjs"
+  },
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "preline": "^4.2.0",
+    "tailwindcss": "^4.3.2"
+  }
+}
